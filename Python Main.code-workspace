@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": ".",			
+		}
+	],
+	"settings": {
+		"editor.fontWeight": "bold",
+		"terminal.integrated.fontSize": 15,
+		"terminal.integrated.lineHeight": 1.5,
+		"editor.cursorBlinking": "blink",
+		"terminal.integrated.cursorStyle":"underline",
+		"terminal.integrated.cursorBlinking":true,
+		"workbench.colorCustomizations": {
+			"terminal.foreground": "#00ff0d",
+			"terminal.background": "#202222",
+			"terminalCursor.foreground": "#ff00bf",
+			"terminal.ansiYellow": "#FFFFFF",
+			"terminal.ansiBrightYellow": "#FFFFFF",
+			"terminal.ansiWhite": "#FFFFFF",
+			"terminal.ansiBrightWhite": "#FFFFFF",
+					}
+	}
+}
