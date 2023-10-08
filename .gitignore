@@ -1,0 +1,8 @@
+# Ignore all files
+*
+
+# But do not ignore directories (so we can check for .py files inside them)
+!*/
+
+# Do not ignore Python files
+!*.py
