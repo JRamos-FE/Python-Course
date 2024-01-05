@@ -1,48 +1,47 @@
-# Program that deals with interprocess communication
+# Program dealing with Interprocess Communication using conditions
 
-# Importing libraries
+# Importing libhraries
 from threading import *
 from time import *
 
 # Data class
 class MyData:
-    def __init__(self): # Constructor method
+    def __init__(self): # Construvtor method
         self.data = 0
-        self.flag = False
-        self.lock = Lock()
+        self.cv = Condition()
         
     def put(self, d): # Put method, writes data
-        while self.flag != False:
-            pass
-        self.lock.acquire()
+        self.cv.acquire()
+        self.cv.wait()
         self.data = d
-        self.flag = True
+        self.cv.notify()
         self.lock.release()
+        sleep(1)
         
     def get(self): # Get method, reads data
-        while self.flag != True:
-            pass
-        self.lock.acquire()
+        self.cv.acquire()
+        self.cv.wait(timeout = 0)
         x = self.data
-        self.flag = False
-        self.lock.release()
+        self.cv.notify()
+        self.cv.release()
+        sleep(1)
         return x
-
-# Producer function   
+    
+# Producer function
 def producer(data):
     i = 1
     while True:
         data.put(i)
         print('Producer: ', i)
         i += 1
-
-# Consumer function     
+            
+# Consumer function
 def consumer(data):
     while True:
         x = data.get()
         print('Consumer: ', x)
-
-# Creating objects/threads
+            
+# Creating and calling objects/threads
 data = MyData()
 t1 = Thread(target=lambda:producer(data))
 t2 = Thread(target=lambda:consumer(data))
