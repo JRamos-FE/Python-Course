@@ -8,8 +8,8 @@ from time import *
 class MyData:
     def __init__(self): # Constructor method
         self.data = 0
-        self.flag = False
-        self.lock = Lock()
+        self.flag = False # Used to indicate change in data
+        self.lock = Lock() # used for simultaneous modifications prevention
         
     def put(self, d): # Put method, writes data
         while self.flag != False:
