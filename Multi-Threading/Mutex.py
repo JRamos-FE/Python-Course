@@ -4,12 +4,14 @@
 from threading import *
 from time import *
 
+
 # Function display
 def display(str1):
     l.acquire()
     for x in str1:
         print(x)
     l.release()
+
 
 l = Lock()
 
@@ -22,4 +24,3 @@ t2.start()
 
 t1.join()
 t2.join()
-

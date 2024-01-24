@@ -5,6 +5,7 @@ num1 = int(input('Enter the first number: '))
 num2 = int(input('Enter the second number: '))
 num3 = int(input('Enter the third number: '))
 
+
 # Creating function max3 to find the greatest among the three
 def max3(x, y, z):
     if x > y and x > z:
@@ -18,5 +19,6 @@ def max3(x, y, z):
     else:
         print('Invalid')
 
+
 # Calling the function
-max3(num1 ,num2, num3)
+max3(num1, num2, num3)

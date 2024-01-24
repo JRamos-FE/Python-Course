@@ -1,4 +1,4 @@
-#Program that can sum the total of the integers for a number
+# Program that can sum the total of the integers for a number
 
 n = int(input('Enter a number: '))
 

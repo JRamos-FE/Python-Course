@@ -4,6 +4,7 @@
 from threading import *
 from time import *
 
+
 # Display function
 def display(str1):
     l.acquire()
@@ -11,6 +12,7 @@ def display(str1):
         print(x)
         sleep(.01)
     l.release()
+
 
 # Assigning semaphore
 l = Semaphore(2)

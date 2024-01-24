@@ -1,7 +1,8 @@
-# Prorgam that will print the categorization of someones age based on a number
+# Program that will print the categorization of someones age based on a number
 # Will return with a function, and includes exeption handling
 
 user_age = int(input('Enter your age: '))
+
 
 # Creating the function
 def stage(age):
@@ -16,11 +17,13 @@ def stage(age):
     else:
         print('Old')
 
+
 # Creating the exception class
 class NegativeAgeException(Exception):
     pass
 
-# Calling the fucntion inside try and except
+
+# Calling the function inside try and except
 try:
     stage(user_age)
 except NegativeAgeException as e:

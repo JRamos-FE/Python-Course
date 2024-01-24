@@ -6,6 +6,7 @@ class MinimumBalanceError(Exception):
         self.message = message
         super().__init__(self.message)
 
+
 # Bank account class
 class Account:
     AccNumber = 1001
@@ -17,7 +18,7 @@ class Account:
         self.balance = balance
         self.account_number = Account.AccNumber
         Account.AccNumber += 1
-    
+
     def deposit(self, amount):
         self.balance += amount
 
@@ -30,6 +31,7 @@ class Account:
         print(f'Account Number: {self.account_number}')
         print(f'Name: {self.name}')
         print(f'Balance: {self.balance}')
+
 
 # Example usage
 try:

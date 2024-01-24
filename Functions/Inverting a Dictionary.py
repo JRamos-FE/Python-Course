@@ -17,7 +17,7 @@ def invert_dict(x):
     # Returning the new dictionary
     return after
 
+
 # Calling and printing the function
 idict = invert_dict(before)
 print(idict)
-

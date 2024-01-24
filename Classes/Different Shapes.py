@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from math import pi
 
+
 # Shape class
 class Shape(ABC):
     def __init__(self, name):
@@ -9,6 +10,7 @@ class Shape(ABC):
     @abstractmethod
     def area(self):
         pass
+
 
 # Rectangle subclass
 class Rectangle(Shape):
@@ -20,6 +22,7 @@ class Rectangle(Shape):
     def area(self):
         return self.length * self.width
 
+
 # Circle subclass
 class Circle(Shape):
     def __init__(self, radius):
@@ -28,6 +31,7 @@ class Circle(Shape):
 
     def area(self):
         return pi * self.radius ** 2
+
 
 # Creating and calling objects
 # Note: We cannot instantiate Shape as it's an abstract class

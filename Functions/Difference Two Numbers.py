@@ -4,6 +4,7 @@
 num1 = int(input('Enter the first number: '))
 num2 = int(input('Enter the second number: '))
 
+
 # Function creation for difference
 def diff(x, y):
     result = abs(x - y)
@@ -12,6 +13,7 @@ def diff(x, y):
         print('True, difference = ', result)
     else:
         print('False, difference = ', result)
+
 
 # Calling the function
 diff(num1, num2)

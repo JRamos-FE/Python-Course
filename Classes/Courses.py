@@ -3,6 +3,7 @@
 # Outer class course
 class Course:
     def __init__(self, course_name, course_duration, *books):
+        self.book = None
         self.course_name = course_name
         self.course_duration = course_duration
         self.books = [self.Book(title) for title in books]
@@ -17,6 +18,6 @@ class Course:
             self.title = title
             self.author = author
             self.publication_date = publication_date
-            
+
         def __str__(self):
             return f"Title: {self.title}\nAuthor: {self.author}\nPublication Date: {self.publication_date}"

@@ -1,19 +1,25 @@
 # Progam that relates to polymorphism and pets
 
 # Cat class
+def make_sound():
+    return 'Meow Meow'
+
+
 class Cat:
     def __init__(self, name, age):
         self.name = name
         self.age = age
-    
+
     def info(self):
         info = f'Name: {self.name}\n Age: {self.age}'
         return info
-    
-    def make_sound(self):
-        return 'Meow Meow'
 
-# Dog class    
+
+# Dog class
+def make_sounds():
+    return 'Woof Woof'
+
+
 class Dog:
     def __init__(self, name, age):
         self.name = name
@@ -23,13 +29,12 @@ class Dog:
         info = f'Name: {self.name}\n Age: {self.age}'
         return info
 
-    def make_sound(self):
-        return 'Woof Woof'
 
 # Function for pet type display
-def my_pet(pet):
-    print(pet.info())
-    print(pet.make_sound())
+def my_pet(pets):
+    print(pets.info())
+    print(pets.make_sounds())
+
 
 # Input selection and display
 pet_type = input('Enter your pets type (dog or cat): ').lower()
@@ -48,5 +53,3 @@ if pet:
     my_pet(pet)
 else:
     print('Invalid pet type')
-
-

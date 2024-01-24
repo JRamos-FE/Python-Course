@@ -3,6 +3,7 @@
 # Importing math library
 import math
 
+
 # Circle class
 class Circle:
     def __init__(self, radius):
@@ -11,7 +12,7 @@ class Circle:
     def area(self):
         area = math.pi * (self.radius ** 2)
         return area
-    
+
     def perimeter(self):
         perimeter = 2 * math.pi * self.radius
         return perimeter

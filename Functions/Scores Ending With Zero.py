@@ -14,6 +14,7 @@ def sum_zero(L):
             sum_num_end_zero += x
     return sum_num_end_zero
 
+
 # Declaring the function
 x = sum_zero(scores)
 print(x)

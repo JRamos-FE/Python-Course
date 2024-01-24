@@ -10,15 +10,16 @@ class Customer:
     def get_name(self):
         cust_name = self.name
         return cust_name
-    
+
     def get_phonenum(self):
         cust_num = self.phonenum
         return cust_num
-    
+
     def set_phonenum(self, new_phonenum):
         self.phonenum = new_phonenum
         return new_phonenum
-    
+
+
 # Creating a customer
 cust1 = Customer('Joseph', 8129460934)
 
@@ -27,4 +28,4 @@ print(cust1.get_name())
 print(cust1.get_phonenum())
 
 # Creating a new phone number for this customer
-print(cust1.set_phonenum(8122073509))
+print(cust1.set_phonenum(8122073510))

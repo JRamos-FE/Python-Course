@@ -3,6 +3,7 @@
 # Taking user input
 user_input = input('Enter a phrase: ')
 
+
 # Creating a function
 def count(phrase):
     # Variables
@@ -17,9 +18,10 @@ def count(phrase):
             lower_count += 1
         else:
             other_count += 1
-    print('Upper case = ', upper_count,'\n',
+    print('Upper case = ', upper_count, '\n',
           'Lower Case = ', lower_count, '\n',
           'Other = ', other_count)
-    
+
+
 # Calling the function
 count(user_input)

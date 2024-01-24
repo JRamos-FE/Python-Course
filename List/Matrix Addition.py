@@ -1,4 +1,4 @@
-# Prorgam that can add two matrices
+# Program that can add two matrices
 
 L1 = [[1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4]]
 L2 = [[5, 6, 7, 8], [5, 6, 7, 8], [5, 6, 7, 8]]

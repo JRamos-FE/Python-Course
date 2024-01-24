@@ -7,19 +7,20 @@ class Rational:
         self.q = q
 
     def __add__(self, other):
-       p = self.p * other.q + self.q * other.p
-       q = self.q * other.q
-       sum = Rational(p, q)
-       return sum
-    
+        p = self.p * other.q + self.q * other.p
+        q = self.q * other.q
+        sum = Rational(p, q)
+        return sum
+
     def __sub__(self, other):
         p = self.p * other.q - self.q * other.p
         q = self.q * other.q
         deduc = Rational(p, q)
         return deduc
-    
+
     def __str__(self):
         return f'Rational Number = {self.p} / {self.q}'
+
 
 # Creating and calling an object
 r1 = Rational(4, 6)

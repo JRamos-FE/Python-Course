@@ -6,12 +6,14 @@ class Robot:
         self.name = name
 
     def say_hi(self):
-        return('Hello, how can I help you?')
-    
+        return 'Hello, how can I help you?'
+
+
 class PoliceRobot(Robot):
     def say_hi(self):
-        return('Police Robot, how can I help you?')
-    
+        return 'Police Robot, how can I help you?'
+
+
 # Creating and calling objects
 rb1 = Robot('X24')
 prb1 = PoliceRobot('PCX24')

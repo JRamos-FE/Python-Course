@@ -9,10 +9,13 @@ class Polygon:
     def describe(self):
         print(f'This shape has {self.num_sides} sides with the following dimensions: {self.side_dimensions}')
 
+
 # Triangle class
 class Triangle(Polygon):
-    def __init__(self,area):
+    def __init__(self, area, num_sides, *side_dimensions):
+        super().__init__(num_sides, *side_dimensions)
         self.area = area
+
 
 # Creating a shape
 poly1 = Polygon(5, 2, 4, 5, 6, 8)

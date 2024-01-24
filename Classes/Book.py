@@ -9,6 +9,7 @@ class Book:
     def show_details(self):
         details = f'Title: {self.title}, Author: {self.author}, Price: ${self.price}'
         return details
-    
-b1 = Book('GEB', "Douglas Hofstader", 20)
+
+
+b1 = Book('GEB', "Douglas Hofstadter", 20)
 print(b1.show_details())

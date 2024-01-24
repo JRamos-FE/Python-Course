@@ -7,10 +7,11 @@ def addition(*args):
         total += i
     return total
 
+
 # User input
 user_input = input('Enter the numbers to add: ')
 
-# Utilizing split to seperate the numbers through a space
+# Utilizing split to separate the numbers through a space
 numbers = [int(x) for x in user_input.split()]
 
 # Calling the function
@@ -18,4 +19,3 @@ result = addition(*numbers)
 
 # Printing result
 print(result)
-
