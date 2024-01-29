@@ -1,1 +1,1 @@
-# Program that identifies the highest product result from 
+# Program that identifies the highest product result from
