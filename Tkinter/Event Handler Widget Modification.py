@@ -5,8 +5,12 @@ from tkinter.messagebox import *
 
 
 def my_handler(e):
-    lbl['bg'] = 'pink'
-    lbl['text'] = 'pink'
+    if int(e.type) == 7:
+        lbl['bg'] = 'pink'
+        lbl['text'] = 'pink'
+    elif int(e.type) == 8:
+        lbl['bg'] = 'red'
+        lbl['text'] = 'red'
 
 
 def my_handler2(e):
